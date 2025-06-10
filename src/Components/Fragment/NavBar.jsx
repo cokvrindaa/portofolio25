@@ -17,7 +17,7 @@ const Logo = () => {
 const Content = (props) => {
   const { text } = props;
   return (
-    <a href="#" className=" font-semibold">
+    <a href="#" className=" font-semibold hover:font-bold">
       {text}
     </a>
   );
