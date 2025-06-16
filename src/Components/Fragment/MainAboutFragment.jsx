@@ -14,19 +14,21 @@ const handleAnimationComplete = () => {
 };
 const MainAboutFragment = () => {
   return (
-    <div>
-      <Gambar></Gambar>
-      <Text></Text>
-      <div className="gap-3 flex items-center justify-center mt-5">
-        <Button link="https://www.instagram.com/cokvrindaaa/">
-          <FontAwesomeIcon icon={faInstagram} />
-        </Button>
-        <Button link="https://github.com/cokvrindaa">
-          <FontAwesomeIcon icon={faGithub} />
-        </Button>
-        <Button link="https://www.tiktok.com/@cokvrindaa">
-          <FontAwesomeIcon icon={faTiktok} />
-        </Button>
+    <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-20 mt-[-100px] p-8">
+      <Gambar />
+      <div className="gap-3 flex items-center flex-col justify-center mt-2">
+        <Text />
+        <div className="gap-3 flex flex-row justify-center mt-2 lg:mt-2">
+          <Button link="https://www.instagram.com/cokvrindaaa/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </Button>
+          <Button link="https://github.com/cokvrindaa">
+            <FontAwesomeIcon icon={faGithub} />
+          </Button>
+          <Button link="https://www.tiktok.com/@cokvrindaa">
+            <FontAwesomeIcon icon={faTiktok} />
+          </Button>
+        </div>
       </div>
     </div>
   );
@@ -46,15 +48,15 @@ const Gambar = () => {
       delay={0.3}
     >
       <img
-        src="./src/image/profilsatu.jpg" 
-        className=" rounded-full w-64 justify-center items-center mb-5 m-auto"
+        src="./src/image/profilsatu.jpg"
+        className=" rounded-full w-58 justify-center items-center mb-5 m-auto lg:w-96"
       ></img>
     </AnimatedContent>
   );
 };
 
 const Button = (props) => {
-  const { children , link} = props;
+  const { children, link } = props;
   return (
     <AnimatedContent
       distance={40}
@@ -84,7 +86,7 @@ const Button = (props) => {
                 fontWeight: "900",
                 color: "white",
                 margin: 0,
-                marginTop: "-2px",
+                // marginLeft: "-2px",
               }}
             >
               {children}
@@ -98,14 +100,14 @@ const Button = (props) => {
 
 const Text = () => {
   return (
-    <div className="flex items-center justify-center text-center flex-col ">
+    <div>
       <BlurText
         text="Haloo 👋, nama ku "
         delay={150}
         animateBy="words"
         direction="top"
         onAnimationComplete={handleAnimationComplete}
-        className="text-[20px] "
+        className="text-[20px] text-center justify-center lg:text-[25px]"
       />
 
       <AnimatedContent
@@ -124,7 +126,7 @@ const Text = () => {
           colors={["#FFFF, #4079ff, #FFFF, #4079ff, #FFFF"]}
           animationSpeed={8}
           showBorder={false}
-          className=" text-[60px] font-bold"
+          className=" text-[54px] font-bold lg:text-[70px]"
         >
           Cok Vrinda
         </GradientText>
@@ -136,7 +138,7 @@ const Text = () => {
         animateBy="words"
         direction="top"
         onAnimationComplete={handleAnimationComplete}
-        className="text-[20px] text-center justify-center"
+        className="text-[20px] text-center justify-center lg:text-[25px]"
       />
     </div>
   );

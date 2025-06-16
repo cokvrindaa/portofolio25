@@ -1,7 +1,10 @@
 import MainAboutFragment from '../Fragment/MainAboutFragment.jsx';
 const MainAbout = () => {
     return(
-        <MainAboutFragment></MainAboutFragment>
+        <div className='h-screen flex items-center justify-center'>
+
+            <MainAboutFragment></MainAboutFragment>
+        </div>
     )
 }
 export default MainAbout
