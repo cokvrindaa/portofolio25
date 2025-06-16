@@ -48,7 +48,7 @@ const Gambar = () => {
       delay={0.3}
     >
       <img
-        src="portofolio25/image/profilsatu.jpg"
+        src={`/portofolio25/image/profilsatu.jpg`}
         className=" rounded-full w-58 justify-center items-center mb-5 m-auto lg:w-96"
       ></img>
     </AnimatedContent>
