@@ -107,7 +107,7 @@ const Text = () => {
         animateBy="words"
         direction="top"
         onAnimationComplete={handleAnimationComplete}
-        className="text-[20px] text-center justify-center lg:text-[25px]"
+        className="text-[20px] text-center justify-center lg:text-[25px]  font-Poppins"
       />
 
       <AnimatedContent
@@ -138,7 +138,7 @@ const Text = () => {
         animateBy="words"
         direction="top"
         onAnimationComplete={handleAnimationComplete}
-        className="text-[20px] text-center justify-center lg:text-[25px]"
+        className="text-[20px] text-center justify-center lg:text-[25px]  font-Poppins"
       />
     </div>
   );

@@ -6,7 +6,7 @@ const MainPage = () => {
       <MainAbout></MainAbout>
       <ScrollVelocity
         texts={["Emangnya lo siapa?, nama lengkap koe siapa?", "skol lagi ke bawah bos", "jangan lupa literasi ya, biar ga nanya lagi :v"]}
-        className="custom-scroll-text"
+        className="custom-scroll-text  font-Poppins"
           velocity={40} 
 
       />
