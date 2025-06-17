@@ -1,5 +1,6 @@
 import MainAbout from "../Layout/MainAbout";
 import ScrollVelocity from "../Element/ScrollVelocity.jsx";
+import MoreAbout from "../Layout/MoreAbout.jsx";
 const MainPage = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const MainPage = () => {
           velocity={40} 
 
       />
-      <MainAbout></MainAbout>
+      <MoreAbout></MoreAbout>
     </div>
   );
 };
