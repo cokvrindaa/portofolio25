@@ -1,4 +1,9 @@
 import Lanyard from "../Element/Lanyard/Lanyard/Lanyard.jsx";
+import SplitText from "../Element/SplitText.jsx";
+
+const handleAnimationComplete = () => {
+  console.log("All letters have animated!");
+};
 
 const MoreAboutFragment = () => {
   return (
@@ -6,9 +11,20 @@ const MoreAboutFragment = () => {
       <div className="w-full lg:w-[2000px] flex justify-center max-h-[600px] lg:max-h-full overflow-hidden">
         <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
       </div>
-      <p className="  text-large md:text-lg font-Poppins text-justify lg:text-3xl  ">
-        Perkenalkan lebih lanjut, nama lengkap saya <span className="font-bold">Cokorda Vrindavan Chandra Dasa</span>. Saya lahir di Bali, Indonesia. Pada portofolio ini di buat saya masih smp otw sma/k. Saya pertamakali mencoba react js. Seblumnya saya juga menggunakan beberapa bahasa web.
-      </p>
+      
+      <SplitText
+        text={`Perkenalkan lebih lanjut, nama lengkap saya Cokorda Vrindavan Chandra Dasa. Saya lahir di Bali, Indonesia. Pada portofolio ini dibuat saya masih SMP otw SMA/K. Saya pertama kali mencoba React JS. Sebelumnya saya juga menggunakan beberapa bahasa web.`}
+        className="text-justify text-large md:text-lg font-Poppins lg:text-3xl"
+        delay={100}
+        duration={0.6}
+        ease="power3.out"
+        splitType="words" 
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        onLetterAnimationComplete={handleAnimationComplete}
+      />
     </div>
   );
 };
