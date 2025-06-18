@@ -13,41 +13,44 @@ const keterangan = {
 };
 const BahasaDigunakanFragment = () => {
   return (
-    <div className="flex flex-col gap-6 lg:flex-row">
+    <div>
       <DecryptedText
         text="Bahasa Pemrograman"
         animateOn="view"
         revealDirection="center"
-        
-        className="font-Poppins text-2xl mx-auto text-center font-bold"
+        className="font-Poppins text-2xl mx-auto text-center font-bold "
       />
-
-      <Card text={keterangan.javascript} icon={faJs}></Card>
-      <Card text={keterangan.php} icon={faPhp}></Card>
-      <AnimatedContent
-        distance={40}
-        direction="vertical"
-        reverse={true}
-        duration={1.2}
-        ease="power3.out"
-        initialOpacity={0.2}
-        animateOpacity
-        scale={1.1}
-        threshold={0.2}
-        delay={0.3}
-      >
-        <SpotlightCard
-          className="custom-spotlight-card relative flex flex-col items-start justify-between h-73 "
-          spotlightColor="rgba(0, 229, 255, 0.2)"
+      <div className="flex flex-col gap-6 lg:flex-row">
+        <Card text={keterangan.javascript} icon={faJs}></Card>
+        <Card text={keterangan.php} icon={faPhp}></Card>
+        <AnimatedContent
+          distance={40}
+          direction="vertical"
+          reverse={true}
+          duration={1.2}
+          ease="power3.out"
+          initialOpacity={0.2}
+          animateOpacity
+          scale={1.1}
+          threshold={0.2}
+          delay={0.3}
         >
-          <img src={`/portofolio25/image/arduino.png`} className="w-40 mb-4" />
-          <span className="text-white  text-justify text-lg mt-2">
-            {keterangan.arduino}
-          </span>
-        </SpotlightCard>
-      </AnimatedContent>
+          <SpotlightCard
+            className="custom-spotlight-card relative flex flex-col items-start justify-between h-73 "
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            <img
+              src={`/portofolio25/image/arduino.png`}
+              className="w-40 mb-4"
+            />
+            <span className="text-white  text-justify text-lg mt-2">
+              {keterangan.arduino}
+            </span>
+          </SpotlightCard>
+        </AnimatedContent>
 
-      <Card text={keterangan.html} icon={faHtml5}></Card>
+        <Card text={keterangan.html} icon={faHtml5}></Card>
+      </div>
     </div>
   );
 };
