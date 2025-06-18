@@ -19,7 +19,8 @@ const BahasaDigunakanFragment = () => {
         animateOn="view"
         revealDirection="center"
         className="font-Poppins text-2xl mx-auto text-center font-bold "
-      />
+      />{" "}
+
       <div className="flex flex-col gap-6 lg:flex-row">
         <Card text={keterangan.javascript} icon={faJs}></Card>
         <Card text={keterangan.php} icon={faPhp}></Card>
@@ -36,7 +37,7 @@ const BahasaDigunakanFragment = () => {
           delay={0.3}
         >
           <SpotlightCard
-            className="custom-spotlight-card relative flex flex-col items-start justify-between h-73 "
+            className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 "
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
             <img
@@ -70,7 +71,7 @@ const Card = (props) => {
       delay={0.3}
     >
       <SpotlightCard
-        className="custom-spotlight-card relative flex flex-col items-start justify-between h-74 "
+        className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 "
         spotlightColor="rgba(0, 229, 255, 0.2)"
       >
         <FontAwesomeIcon icon={icon} className="text-9xl" />
