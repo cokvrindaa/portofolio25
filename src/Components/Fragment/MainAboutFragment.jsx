@@ -133,7 +133,7 @@ const Text = () => {
       </AnimatedContent>
 
       <BlurText
-        text="lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        text="saya manusiaa biasa, makan nasi...."
         delay={150}
         animateBy="words"
         direction="top"
