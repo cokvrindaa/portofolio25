@@ -37,7 +37,7 @@ const BahasaDigunakanFragment = () => {
           delay={0.3}
         >
           <SpotlightCard
-            className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 "
+            className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 p-8 "
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
             <img
@@ -71,7 +71,7 @@ const Card = (props) => {
       delay={0.3}
     >
       <SpotlightCard
-        className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 "
+        className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 p-8 "
         spotlightColor="rgba(0, 229, 255, 0.2)"
       >
         <FontAwesomeIcon icon={icon} className="text-9xl" />

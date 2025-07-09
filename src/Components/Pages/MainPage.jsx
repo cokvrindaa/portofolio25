@@ -20,10 +20,16 @@ const MainPage = () => {
       <BahasaDigunakan></BahasaDigunakan>
       <div className="mt-15"></div>
       <ScrollVelocity
-        texts={["PROJECT LU MANAA BOSSS!!!", "JANGAN JANGAN LOCALHOST 😹", "XIXIXIXIXI"]}
-        className="custom-scroll-text  font-Poppins"
+        texts={[
+          "PROJECT LU MANAA BOSSS!!!",
+          "JANGAN JANGAN LOCALHOST 😹",
+          "XIXIXIXIXI",
+        ]}
+        className="custom-scroll-text  font-Poppins "
         velocity={40}
       />
+      <div className="mb-15"></div>
+
       <Projek></Projek>
     </div>
   );
