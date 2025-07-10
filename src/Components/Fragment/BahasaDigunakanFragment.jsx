@@ -1,81 +1,89 @@
 import SpotlightCard from "../Element/SpotlightCard.jsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faJs, faPhp } from "@fortawesome/free-brands-svg-icons";
+
 import AnimatedContent from "../Element/AnimatedContent.jsx";
 import DecryptedText from "../Element/DecryptedText.jsx";
-const keterangan = {
-  javascript:
-    "beberapa perojek aku menggunakan Javascript, terutama bagian frontend.",
-  php: "beberapa perojek aku menggunakan PHP, terutama bagian backend",
-  arduino:
-    "beberapa perojek aku menggunakan arduino, ini pengabungan ilmu web dan elektronika dasar",
-  html: "tentunya, saat tampilan web, aku menggunakn HTML5, CSS, kadang Tailiwind kadang Bootstrap",
-};
+
 const BahasaDigunakanFragment = () => {
   return (
     <div>
       <DecryptedText
-        text="Bahasa Pemrograman"
+        text="Perkakas Pemrograman"
         animateOn="view"
         revealDirection="center"
-        className="font-Poppins text-2xl mx-auto text-center font-bold "
+        className="font-Poppins text-2xl lg:text-4xl mx-auto text-center font-bold "
       />{" "}
+      <p className="mt-[-5px] mb-4 text-sm lg:text-2xl lg:mb-5">
+        Berikut bahasa pemrograman, libary, framework, markup, dan tools yang
+        aku sering pakai, untuk developing..
+      </p>
+      <div className="flex flex-col gap-6 lg:grid lg:grid-cols-4 ">
+        <Card
+          text="Javascript"
+          gambar={`/portofolio25/image/javascript.png`}
+          textisi="Bahasa Pemrograman"
+        ></Card>
+        <Card
+          text="PHP"
+          gambar={`/portofolio25/image/php.png`}
+          textisi="Bahasa Pemrograman"
+        ></Card>
 
-      <div className="flex flex-col gap-6 lg:flex-row">
-        <Card text={keterangan.javascript} icon={faJs}></Card>
-        <Card text={keterangan.php} icon={faPhp}></Card>
-        <AnimatedContent
-          distance={40}
-          direction="vertical"
-          reverse={true}
-          duration={1.2}
-          ease="power3.out"
-          initialOpacity={0.2}
-          animateOpacity
-          scale={1.1}
-          threshold={0.2}
-          delay={0.3}
-        >
-          <SpotlightCard
-            className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 p-8 "
-            spotlightColor="rgba(0, 229, 255, 0.2)"
-          >
-            <img
-              src={`/portofolio25/image/arduino.png`}
-              className="w-40 mb-4"
-            />
-            <span className="text-white  text-justify text-lg mt-2">
-              {keterangan.arduino}
-            </span>
-          </SpotlightCard>
-        </AnimatedContent>
+        <Card
+          text="Tailwind"
+          textisi="CSS framework"
+          gambar={`/portofolio25/image/tailwindcss.png`}
+        ></Card>
 
-        <Card text={keterangan.html} icon={faHtml5}></Card>
+        <Card
+          text="HTML & CSS"
+          textisi="Bahasa Markup Styling"
+          gambar={`/portofolio25/image/htmlcss.png`}
+        ></Card>
+        <Card
+          text="Arduino C"
+          textisi="Bahasa Pemrograman"
+          gambar={`/portofolio25/image/arduin.png`}
+        ></Card>
+        <Card
+          text="ESP 32 & 8266"
+          textisi="Microcontroler"
+          gambar={`/portofolio25/image/esp32.png`}
+        ></Card>
+        <Card
+          text="Github"
+          textisi="Repository"
+          gambar={`/portofolio25/image/github.png`}
+        ></Card>
       </div>
     </div>
   );
 };
 const Card = (props) => {
-  const { text, icon } = props;
+  const { text, gambar, textisi } = props;
   return (
     <AnimatedContent
-      distance={40}
+      distance={100}
       direction="vertical"
-      reverse={true}
+      reverse={false}
       duration={1.2}
       ease="power3.out"
       initialOpacity={0.2}
       animateOpacity
-      scale={1.1}
+      scale={1.0}
       threshold={0.2}
       delay={0.3}
     >
       <SpotlightCard
-        className="custom-spotlight-card relative flex flex-col items-start justify-between h-80 p-8 "
+        className="custom-spotlight-card relative flex items-start gap-4 h-full p-6"
         spotlightColor="rgba(0, 229, 255, 0.2)"
       >
-        <FontAwesomeIcon icon={icon} className="text-9xl" />
-        <span className="text-white  text-justify text-lg mt-2">{text}</span>
+        <img src={gambar} className="w-16 rounded-lg" />
+        <div className="flex flex-col mt-1.5">
+          <span className="text-white text-justify text-xl font-semibold">
+            {text}
+          </span>
+          <p>{textisi}</p>
+        </div>
       </SpotlightCard>
     </AnimatedContent>
   );

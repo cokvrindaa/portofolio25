@@ -13,7 +13,7 @@ const MoreAboutFragment = () => {
       </div>
       
       <SplitText
-        text={`Perkenalkan lebih lanjut, nama lengkap saya Cokorda Vrindavan Chandra Dasa. Saya lahir di Bali, Indonesia. Pada portofolio ini dibuat saya masih SMP otw SMA/K. Saya pertama kali mencoba React JS. Sebelumnya saya juga menggunakan beberapa bahasa web.`}
+        text={`Perkenalkan lebih lanjut, nama lengkap saya Cokorda Vrindavan Chandra Dasa. Saya lahir di Bali, Indonesia. Pada portofolio ini dibuat saya masih SMP otw SMA/K. Saya pertama kali mencoba React JS. Sebelumnya saya juga menggunakan beberapa bahasa web. Saya juga mencoba-coba eksplorasi IOT menggunakan ESP32`}
         className="text-justify text-large md:text-lg font-Poppins lg:text-3xl"
         delay={100}
         duration={0.6}

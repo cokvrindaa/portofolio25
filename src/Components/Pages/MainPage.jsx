@@ -28,7 +28,7 @@ const MainPage = () => {
         className="custom-scroll-text  font-Poppins "
         velocity={40}
       />
-      <div className="mb-15"></div>
+      <div className="mb-15 lg:mb-80"></div>
 
       <Projek></Projek>
     </div>
