@@ -83,6 +83,7 @@ const Card = (props) => {
             {text}
           </span>
           <p>{textisi}</p>
+
         </div>
       </SpotlightCard>
     </AnimatedContent>

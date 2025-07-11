@@ -4,9 +4,11 @@ import BlurText from "../Element/BlurText.jsx";
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
 };
-const keterangan = {
-  
-};
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
+const keterangan = {};
 const ProjekFragment = () => {
   return (
     <div>
@@ -18,17 +20,26 @@ const ProjekFragment = () => {
         onAnimationComplete={handleAnimationComplete}
         className="text-2xl lg:text-[35px] text-center justify-center  font-Poppins font-bold mb-2 lg:text-5xl "
       />
-      <p className="text-center justify-center mb-10 lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi!</p>
+      <p className="text-center justify-center mb-10 lg:text-2xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi!
+      </p>
       <div className="flex flex-col lg:grid gap-3 lg:gap-6 lg:grid-cols-3">
         <Card
           judul="Todo List JS"
           gambar={`/portofolio25/image/simpletodolist.png`}
           text="saya membuat project ini, untuk melatih fungsi append(), delete() di javascript, dan logic sederhana untuk mengedit list. "
+          icon={`/portofolio25/image/htmlcss.png`}
+          icon2={`/portofolio25/image/javascript.png`}
+          icon3={`/portofolio25/image/tailwindcss.png`}
+          link
         ></Card>
         <Card
           judul="TingTung Social"
           gambar={`/portofolio25/image/tingtungss.png`}
           text="Tingtung Social adalah replika sosial media menggunakan PHP, Tailwind, dan Mysql untuk Database. Tingtung sederhananya menggunakan konsep CREATE, UPDATE, DELETE, SELECT "
+          icon={`/portofolio25/image/htmlcss.png`}
+          icon2={`/portofolio25/image/php.png`}
+          icon3={`/portofolio25/image/tailwindcss.png`}
         ></Card>
         <Card
           judul="Oh The Neptune Web"
@@ -40,7 +51,7 @@ const ProjekFragment = () => {
   );
 };
 const Card = (props) => {
-  const { gambar, text, judul } = props;
+  const { gambar, text, judul, icon, icon2, icon3, link , linkWeb} = props;
   return (
     <AnimatedContent
       distance={100}
@@ -63,6 +74,31 @@ const Card = (props) => {
         </p>
         <img src={gambar} alt="" />
         <p className="mt-3 text-justify">{text} </p>
+        <div className="flex justify-between items-center w-full mt-2">
+          <div className="gap-2 flex">
+            <img src={icon} alt="" className="w-10 rounded-lg" />
+            <img src={icon2} alt="" className="w-10 rounded-lg" />
+            <img src={icon3} alt="" className="w-10 rounded-lg" />
+          </div>
+          <div className="flex gap-2">
+            <a href={link}>
+              <div className="bg-white  h-auto p-2 rounded-lg flex gap-2">
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="text-2xl text-black"
+                />
+              </div>
+            </a>
+            <a href={linkWeb}>
+              <div className="bg-white  h-auto p-2 rounded-lg flex gap-2">
+                <FontAwesomeIcon
+                  icon={faGlobe}
+                  className="text-2xl text-black"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
       </SpotlightCard>
     </AnimatedContent>
   );
