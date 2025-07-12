@@ -31,7 +31,8 @@ const ProjekFragment = () => {
           icon={`/portofolio25/image/htmlcss.png`}
           icon2={`/portofolio25/image/javascript.png`}
           icon3={`/portofolio25/image/tailwindcss.png`}
-          link
+          link = "https://github.com/cokvrindaa/Simple-To-Do-List-Interface-Only-"
+          linkWeb = "https://cokvrindaa.github.io/Simple-To-Do-List-Interface-Only-/"
         ></Card>
         <Card
           judul="TingTung Social"
@@ -51,7 +52,7 @@ const ProjekFragment = () => {
   );
 };
 const Card = (props) => {
-  const { gambar, text, judul, icon, icon2, icon3, link , linkWeb} = props;
+  const { gambar, text, judul, icon, icon2, icon3, link, linkWeb } = props;
   return (
     <AnimatedContent
       distance={100}
@@ -90,13 +91,13 @@ const Card = (props) => {
               </div>
             </a>
             <a href={linkWeb}>
-              <div className="bg-white  h-auto p-2 rounded-lg flex gap-2">
-                <FontAwesomeIcon
-                  icon={faGlobe}
-                  className="text-2xl text-black"
-                />
-              </div>
-            </a>
+                <div className="bg-white  h-auto p-2 rounded-lg flex gap-2">
+                  <FontAwesomeIcon
+                    icon={faGlobe}
+                    className="text-2xl text-black"
+                  />
+                </div>
+              </a>
           </div>
         </div>
       </SpotlightCard>
