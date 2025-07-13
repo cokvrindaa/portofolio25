@@ -1,7 +1,7 @@
 import ProjekFragment from "../Fragment/ProjekFragment";
 const Projek = () => {
   return (
-    <div className="h-[200vh] p-3 lg:p-10 lg:h-[400vh] lg:mt-0 ">
+    <div className="h-[250vh] p-3 lg:p-10 lg:h-[400vh] lg:mt-0 ">
 
       <ProjekFragment></ProjekFragment>
     </div>
