@@ -15,6 +15,12 @@ const keterangan = {
     "Tingtung Social adalah replika sosial media menggunakan PHP, Tailwind, dan Mysql untuk Database. Tingtung sederhananya menggunakan konsep CREATE, UPDATE, DELETE, SELECT ",
   otnweb:
     "Oh The Neputne adalah channel youtube saya, webiste ini di buat dengan HTML dan Bootstrap saja.",
+  pantaucuy:
+    "Pantau cuy adalah projek yang mengabungkan konsep WEB dengan Elektronika Dasar. Projek ini dapat mengontrol dan memantau beberapa komponen. Komponen tersebut yakni pompa, led, ldr, dht.",
+  myperpus:
+    "My perpus adalah aplikasi manajemen perpustakaan sederhana. Project ini dibuat dengan CRUD di PHP. Untuk styling, project ini menggunakan CSS.",
+  pf24: "Portofolio aku edisi 2024, ini adalah projek yang aku buat dengan menggunakan HTML, CSS, dan JavaScript. Konsepnya Modern-Minimalis",
+  pf25: "Portofolio aku edisi 2025, ini adalah projek yang aku buat dengan menggunakan ReactJS, Tailwind, Reactbits. Konsepnya Modern-Minimalis-Fancy",
 };
 const ProjekFragment = () => {
   return (
@@ -48,12 +54,53 @@ const ProjekFragment = () => {
           icon={`/portofolio25/image/htmlcss.png`}
           icon2={`/portofolio25/image/php.png`}
           icon3={`/portofolio25/image/tailwindcss.png`}
+          linkGit="https://github.com/cokvrindaa/Ting-Tung-Social"
+          linkWeb="https://tingtungsocial.kesug.com/"
         ></Card>
         <Card
           judul="Oh The Neptune Web"
           gambar={`/portofolio25/image/ohtheneptune.png`}
           text={keterangan.otnweb}
           icon={`/portofolio25/image/htmlcss.png`}
+          linkGit="https://github.com/cokvrindaa/ohtheneptune.github.io"
+          linkWeb="https://ohtheneptune.netlify.app/"
+        ></Card>
+        <Card
+          judul="#PANTAUCUY"
+          gambar={`/portofolio25/image/pantaucuy.png`}
+          text={keterangan.pantaucuy}
+          icon={`/portofolio25/image/arduin.png`}
+          icon2={`/portofolio25/image/javascript.png`}
+          icon3={`/portofolio25/image/tailwindcss.png`}
+          linkGit="https://github.com/cokvrindaa/-PANTAUCUY"
+          linkWeb="https://pantaucuydemo.netlify.app/"
+        ></Card>
+        <Card
+          judul="My Perpus"
+          gambar={`/portofolio25/image/myperpus.png`}
+          text={keterangan.myperpus}
+          icon={`/portofolio25/image/htmlcss.png`}
+          icon2={`/portofolio25/image/php.png`}
+          linkGit="https://github.com/cokvrindaa/My-Perpus/"
+          linkWeb="https://github.com/cokvrindaa/My-Perpus/"
+        ></Card>
+        <Card
+          judul="Portofolio 2024"
+          gambar={`/portofolio25/image/portofolio24.png`}
+          text={keterangan.pf24}
+          icon={`/portofolio25/image/htmlcss.png`}
+          icon2={`/portofolio25/image/javascript.png`}
+          linkGit="https://github.com/cokvrindaa/portofolio24/"
+          linkWeb="https://cokvrindaa.github.io/portofolio24/"
+        ></Card>
+        <Card
+          judul="Portofolio 2025"
+          gambar={`/portofolio25/image/portofolio25.png`}
+          text={keterangan.pf25}
+          icon={`/portofolio25/image/tailwindcss.png`}
+          icon2={`/portofolio25/image/javascript.png`}
+          linkGit="https://github.com/cokvrindaa/portofolio25/"
+          linkWeb="https://cokvrindaa.github.io/portofolio25/"
         ></Card>
       </div>
     </div>
@@ -81,7 +128,7 @@ const Card = (props) => {
         <p className="text-white  text-justify text-xl mt-2 font-semibold mb-3 ">
           {judul}
         </p>
-        <img src={gambar} alt="" />
+        <img src={gambar} alt="" className="rounded-xl" />
         <p className="mt-3 text-justify">{text} </p>
         <div className="flex justify-between items-center w-full mt-2">
           <div className="gap-2 flex">
