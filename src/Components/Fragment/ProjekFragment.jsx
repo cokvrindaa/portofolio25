@@ -21,6 +21,7 @@ const keterangan = {
     "My perpus adalah aplikasi manajemen perpustakaan sederhana. Project ini dibuat dengan CRUD di PHP. Untuk styling, project ini menggunakan CSS.",
   pf24: "Portofolio aku edisi 2024, ini adalah projek yang aku buat dengan menggunakan HTML, CSS, dan JavaScript. Konsepnya Modern-Minimalis",
   pf25: "Portofolio aku edisi 2025, ini adalah projek yang aku buat dengan menggunakan ReactJS, Tailwind, Reactbits. Konsepnya Modern-Minimalis-Fancy",
+  smartcar: "Smart Car adalh project yang dibuat dengan esp32. Projek ini dikontrol dengan remote, dan automatisasi sederhana dengan ultrasonik. Projek ini akan di kembangkan menjadi cleaner car."
 };
 const ProjekFragment = () => {
   return (
@@ -101,6 +102,15 @@ const ProjekFragment = () => {
           icon2={`/portofolio25/image/javascript.png`}
           linkGit="https://github.com/cokvrindaa/portofolio25/"
           linkWeb="https://cokvrindaa.github.io/portofolio25/"
+        ></Card>
+        <Card
+          judul="Smart Car"
+          gambar={`/portofolio25/image/smartcar.jpg`}
+          text={keterangan.smartcar}
+          icon={`/portofolio25/image/esp32.png`}
+          icon2={`/portofolio25/image/javascript.png`}
+          linkGit="https://github.com/cokvrindaa/smart-car"
+          linkWeb="https://github.com/cokvrindaa/smart-car"
         ></Card>
       </div>
     </div>
