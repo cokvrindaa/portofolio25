@@ -3,21 +3,32 @@ import ScrollVelocity from "../Element/ScrollVelocity.jsx";
 import MoreAbout from "../Layout/MoreAbout.jsx";
 import BahasaDigunakan from "../Layout/BahasaDigunakan.jsx";
 import Projek from "../Layout/Projek.jsx";
+
 const MainPage = () => {
   return (
     <div>
-      <MainAbout></MainAbout>
-      <ScrollVelocity
-        texts={[
-          "Emangnya lo siapa?, nama lengkap koe siapa?",
-          "skrol lagi ke bawah bos",
-          "jangan lupa literasi ya, biar ga nanya lagi :v",
-        ]}
-        className="custom-scroll-text  font-Poppins"
-        velocity={40}
-      />
-      <MoreAbout></MoreAbout>
-      <BahasaDigunakan></BahasaDigunakan>
+
+      <div id="beranda">
+        <MainAbout />
+      </div>
+
+      <div id="tentang">
+        <ScrollVelocity
+          texts={[
+            "Emangnya lo siapa?, nama lengkap koe siapa?",
+            "skrol lagi ke bawah bos",
+            "jangan lupa literasi ya, biar ga nanya lagi :v",
+          ]}
+          className="custom-scroll-text font-Poppins"
+          velocity={40}
+        />
+        <MoreAbout />
+      </div>
+
+      <div id="skill">
+        <BahasaDigunakan />
+      </div>
+
       <div className="mt-15"></div>
       <ScrollVelocity
         texts={[
@@ -25,12 +36,17 @@ const MainPage = () => {
           "JANGAN JANGAN LOCALHOST 😹",
           "XIXIXIXIXI",
         ]}
-        className="custom-scroll-text  font-Poppins "
+        className="custom-scroll-text font-Poppins"
         velocity={40}
       />
-      <div className="mb-15 lg:mb-80"></div>
 
-      <Projek></Projek>
+      <div id="projek" className="mb-15 lg:mb-80">
+        <Projek />
+      </div>
+
+      <div id="kontak">
+        <p className="text-center py-20">Kontak Section</p>
+      </div>
     </div>
   );
 };
