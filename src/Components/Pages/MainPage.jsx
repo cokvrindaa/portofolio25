@@ -3,11 +3,10 @@ import ScrollVelocity from "../Element/ScrollVelocity.jsx";
 import MoreAbout from "../Layout/MoreAbout.jsx";
 import BahasaDigunakan from "../Layout/BahasaDigunakan.jsx";
 import Projek from "../Layout/Projek.jsx";
-
+import Kontak from "../Layout/Kontak.jsx";
 const MainPage = () => {
   return (
     <div>
-
       <div id="beranda">
         <MainAbout />
       </div>
@@ -45,7 +44,7 @@ const MainPage = () => {
       </div>
 
       <div id="kontak">
-        <p className="text-center py-20">Kontak Section</p>
+        <Kontak />
       </div>
     </div>
   );
