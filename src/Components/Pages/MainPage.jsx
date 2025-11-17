@@ -39,7 +39,7 @@ const MainPage = () => {
         velocity={40}
       />
 
-      <div id="projek" className="mb-15 lg:mb-80">
+      <div id="projek" className="mb-15 lg:mb-150">
         <Projek />
       </div>
 
