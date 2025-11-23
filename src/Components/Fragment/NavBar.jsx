@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 const NavBar = () => {
   return (
-    <div className="sticky top-4 rounded-[100px] z-50 w-[98%] mx-auto items-center backdrop-blur-sm px-8 py-8 shadow-sm flex justify-between">
+    <div className="fixed top-4 rounded-[100px] z-50 w-[98%] mx-auto items-center backdrop-blur-sm px-8 py-8 shadow-sm flex justify-between">
       <Logo />
       <div className="flex gap-6 invisible lg:visible">
         <Content text="Beranda" to="beranda" />

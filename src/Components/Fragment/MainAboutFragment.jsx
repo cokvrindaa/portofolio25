@@ -14,7 +14,7 @@ const handleAnimationComplete = () => {
 };
 const MainAboutFragment = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-20 mt-[-100px] p-8">
+    <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-20  p-8">
       <Gambar />
       <div className="gap-3 flex items-center flex-col justify-center mt-2">
         <Text />
